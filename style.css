@@ -1,0 +1,27 @@
+body{
+    width: 1200px;
+    margin: auto;
+}
+
+li{
+    list-style: none;
+}
+
+nav{
+    background-color: aqua;
+    padding: 10px;
+}
+
+.logo-container img {
+    width: 50px; 
+    height: auto; 
+}
+
+.menu:hover{
+    color: white;
+}
+
+.menu{
+    font-size: 20px;
+    cursor: pointer;
+}
