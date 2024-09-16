@@ -6,7 +6,7 @@ const loadServices = () => {
   };
   
   const displayService = (services) => {
-      console.log(services);
+    //   console.log(services);
     services.forEach((service) => {
       const parent = document.getElementById("service-container");
       const li = document.createElement("li");
