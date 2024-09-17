@@ -33,8 +33,8 @@ const loadServices = () => {
     });
   };
 
-const loadDoctors = ()=> {
-  fetch("https://testing-8az5.onrender.com/doctor/list/")
+const loadDoctors = (search)=> {
+  fetch(`https://testing-8az5.onrender.com/doctor/list/?search=${search?search:" "}`)
   .then(res=>res.json())
   .then(data=>displayDoctor(data?.results))
 }
@@ -90,6 +90,11 @@ const loadSpecialization = () => {
       });
     });
 };
+
+const handleSearch = ()=>{
+  const value = document.getElementById("search").value;
+  loadDoctors(value)
+}
 
 loadDoctors()
 loadServices();
